@@ -14,7 +14,7 @@ Then verify these local URLs while the dev or preview server is running:
 - `/`
 - `/products.html`
 - `/trailready.html`
-- `/privacy.html`
+- `/trailready/privacy.html`
 - `/robots.txt`
 
 ## Optional Environment Variables
@@ -72,7 +72,7 @@ Hostinger should deploy the built static output from the `hostinger` branch of
 After deployment, use absolute HTTPS URLs:
 
 ```text
-Privacy policy: https://korani.no/privacy.html
+Privacy policy: https://korani.no/trailready/privacy.html
 App/support website: https://korani.no/trailready.html
 Company website: https://korani.no/
 Product overview: https://korani.no/products.html
@@ -86,5 +86,5 @@ For domain selection and Hostinger-specific setup, see [DOMAIN_HOSTING.md](DOMAI
 
 - Add the privacy URL in Play Console.
 - Add a privacy link or visible privacy text inside TrailReady itself.
-- Ensure the Play Console Data safety section matches `/privacy.html` and `GOOGLE_PLAY.md`.
+- Ensure the Play Console Data safety section matches `/trailready/privacy.html` and `GOOGLE_PLAY.md`.
 - Keep the deployed privacy policy app-specific to TrailReady and Korani Solutions AS.

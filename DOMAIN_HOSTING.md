@@ -61,7 +61,7 @@ website.
 After deployment, use:
 
 ```text
-Privacy policy: https://korani.no/privacy.html
+Privacy policy: https://korani.no/trailready/privacy.html
 App website: https://korani.no/trailready.html
 Company website: https://korani.no/
 Product overview: https://korani.no/products.html
@@ -70,7 +70,7 @@ Product overview: https://korani.no/products.html
 TrailReady production builds should use:
 
 ```text
-EXPO_PUBLIC_TRAILREADY_PRIVACY_URL=https://korani.no/privacy.html
+EXPO_PUBLIC_TRAILREADY_PRIVACY_URL=https://korani.no/trailready/privacy.html
 ```
 
 ## Sources

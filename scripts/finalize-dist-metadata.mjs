@@ -75,8 +75,8 @@ const pages = [
     },
   },
   {
-    file: 'dist/privacy.html',
-    path: '/privacy.html',
+    file: 'dist/trailready/privacy.html',
+    path: '/trailready/privacy.html',
   },
 ];
 
