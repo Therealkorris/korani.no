@@ -21,13 +21,12 @@ Then verify these local URLs while the dev or preview server is running:
 
 - `SITE_URL`: absolute HTTPS production URL, for example `https://korani-solutions.no`.
   When set, the build generates `sitemap.xml`.
-- `VITE_BASE`: base path for assets. Use `/` for a custom domain or root deploy. Use
-  `/REPOSITORY-NAME/` for GitHub Pages without a custom domain.
+- `VITE_BASE`: base path for assets. Use `/` for Hostinger, a custom domain, or a root deploy.
 
-Current temporary production target:
+Production target:
 
 ```text
-SITE_URL=https://therealkorris.github.io
+SITE_URL=https://korani.no
 VITE_BASE=/
 ```
 
@@ -50,33 +49,33 @@ VITE_BASE=/
 6. Add `SITE_URL` in environment variables after you know the production domain.
 7. Add the production domain in Vercel domain settings.
 
-## GitHub Pages
+## Hostinger Git Deploy
 
-The current GitHub Pages deploy publishes the built `dist/` folder to a `gh-pages` branch.
+Hostinger should deploy the built static output from the `hostinger` branch of
+`Therealkorris/korani.no`.
 
 1. Build with the production URL:
 
    ```powershell
-   $env:SITE_URL='https://therealkorris.github.io'
+   $env:SITE_URL='https://korani.no'
    $env:VITE_BASE='/'
    npm run build
    ```
 
-2. Push the repository source to `main`.
-3. Commit the contents of `dist/` to the `gh-pages` branch.
-4. In GitHub, keep Pages source set to `Deploy from a branch`, `gh-pages`, `/`.
-
-For a custom domain later, set `SITE_URL` to that domain and keep `VITE_BASE=/`.
+2. Push source to `main`.
+3. Commit the contents of `dist/` to the `hostinger` branch.
+4. In Hostinger hPanel, deploy from GitHub repository `Therealkorris/korani.no`, branch
+   `hostinger`, root path `/`.
 
 ## Google Play URLs
 
 After deployment, use absolute HTTPS URLs:
 
 ```text
-Privacy policy: https://therealkorris.github.io/privacy.html
-App/support website: https://therealkorris.github.io/trailready.html
-Company website: https://therealkorris.github.io/
-Product overview: https://therealkorris.github.io/products.html
+Privacy policy: https://korani.no/privacy.html
+App/support website: https://korani.no/trailready.html
+Company website: https://korani.no/
+Product overview: https://korani.no/products.html
 ```
 
 The privacy policy URL must stay publicly reachable while the app is available on Google Play.

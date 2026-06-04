@@ -2,10 +2,10 @@
 
 Public company website for Korani Solutions AS.
 
-Current GitHub Pages target:
+Production target:
 
 ```text
-https://therealkorris.github.io/
+https://korani.no/
 ```
 
 ## Run locally
@@ -23,10 +23,10 @@ npm run build
 
 ## Deploy
 
-Deployment config is included for Netlify (`netlify.toml`), Vercel (`vercel.json`), and GitHub
-Pages via a published `gh-pages` branch.
+Deployment config is included for Hostinger Git deploy, Netlify (`netlify.toml`), and Vercel
+(`vercel.json`).
 See [DEPLOYMENT.md](DEPLOYMENT.md) for the production checklist.
-See [DOMAIN_HOSTING.md](DOMAIN_HOSTING.md) for domain options and Hostinger/GitHub Pages setup.
+See [DOMAIN_HOSTING.md](DOMAIN_HOSTING.md) for domain and Hostinger setup.
 See [GOOGLE_PLAY.md](GOOGLE_PLAY.md) for TrailReady privacy/Data safety alignment notes.
 
 ## Pages
@@ -42,13 +42,13 @@ See [GOOGLE_PLAY.md](GOOGLE_PLAY.md) for TrailReady privacy/Data safety alignmen
 Use the deployed absolute URL for the privacy policy field in Play Console:
 
 ```text
-https://therealkorris.github.io/privacy.html
+https://korani.no/privacy.html
 ```
 
 Use the deployed app/support page if Play Console asks for an app website or support URL:
 
 ```text
-https://therealkorris.github.io/trailready.html
+https://korani.no/trailready.html
 ```
 
 The privacy policy is app-specific, names TrailReady and Korani Solutions AS, and covers local

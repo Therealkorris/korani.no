@@ -6,9 +6,9 @@ Use this as an internal checklist when filling Play Console. It should stay alig
 ## Required URLs After Deployment
 
 ```text
-Company website: https://therealkorris.github.io/
-TrailReady support/app page: https://therealkorris.github.io/trailready.html
-Privacy policy: https://therealkorris.github.io/privacy.html
+Company website: https://korani.no/
+TrailReady support/app page: https://korani.no/trailready.html
+Privacy policy: https://korani.no/privacy.html
 ```
 
 Google Play also requires a privacy link or privacy text inside the app itself.
@@ -55,5 +55,5 @@ Confirm these in the final Play Console Data safety form against the exact relea
 - Keep `/privacy.html` updated if the app adds accounts, cloud sync, analytics, crash reporting, ads, or
   new external providers.
 - Keep the Play Console Data safety section consistent with `/privacy.html`.
-- Set `EXPO_PUBLIC_TRAILREADY_PRIVACY_URL=https://therealkorris.github.io/privacy.html` in the
+- Set `EXPO_PUBLIC_TRAILREADY_PRIVACY_URL=https://korani.no/privacy.html` in the
   production app build environment.
