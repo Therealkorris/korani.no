@@ -26,6 +26,7 @@ npm run build
 Deployment config is included for Netlify (`netlify.toml`), Vercel (`vercel.json`), and GitHub
 Pages via a published `gh-pages` branch.
 See [DEPLOYMENT.md](DEPLOYMENT.md) for the production checklist.
+See [DOMAIN_HOSTING.md](DOMAIN_HOSTING.md) for domain options and Hostinger/GitHub Pages setup.
 See [GOOGLE_PLAY.md](GOOGLE_PLAY.md) for TrailReady privacy/Data safety alignment notes.
 
 ## Pages

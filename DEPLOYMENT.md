@@ -79,6 +79,8 @@ Company website: https://therealkorris.github.io/
 
 The privacy policy URL must stay publicly reachable while the app is available on Google Play.
 
+For domain selection and Hostinger-specific setup, see [DOMAIN_HOSTING.md](DOMAIN_HOSTING.md).
+
 ## App Checklist
 
 - Add the privacy URL in Play Console.
