@@ -34,7 +34,7 @@ See [GOOGLE_PLAY.md](GOOGLE_PLAY.md) for TrailReady privacy/Data safety alignmen
 - `/` company and services website
 - `/products.html` product overview for Search & Index, TrailReady, and internal tools
 - `/trailready.html` TrailReady support / app landing page
-- `/trailready/privacy.html` TrailReady privacy policy for Google Play / beta use
+- `/trailready/privacy` TrailReady privacy policy for Google Play / beta use
 - `/robots.txt` crawler allow file
 
 ## Google Play notes
@@ -42,7 +42,7 @@ See [GOOGLE_PLAY.md](GOOGLE_PLAY.md) for TrailReady privacy/Data safety alignmen
 Use the deployed absolute URL for the privacy policy field in Play Console:
 
 ```text
-https://korani.no/trailready/privacy.html
+https://korani.no/trailready/privacy
 ```
 
 Use the deployed app/support page if Play Console asks for an app website or support URL:

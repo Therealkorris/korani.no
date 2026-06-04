@@ -372,7 +372,7 @@ function App() {
         <nav aria-label="Footer">
           <a href="/products.html">Produkter</a>
           <a href="/trailready.html">TrailReady</a>
-          <a href="/trailready/privacy.html">Privacy</a>
+          <a href="/trailready/privacy">Privacy</a>
           <a href="#contact">Kontakt</a>
         </nav>
       </footer>

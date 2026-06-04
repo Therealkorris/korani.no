@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^privacy\.html$ /trailready/privacy [R=301,L]
+RewriteRule ^trailready/privacy\.html$ /trailready/privacy [R=301,L]
+RewriteRule ^trailready/privacy/?$ /trailready/privacy/index.html [L]
