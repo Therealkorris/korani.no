@@ -1,0 +1,9 @@
+node_modules/
+dist/
+artifacts/
+*.log
+*.err.log
+.vite/
+public/sitemap.xml
+.DS_Store
+Thumbs.db
