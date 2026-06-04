@@ -12,7 +12,7 @@ if (!isUsableUrl) {
 }
 
 const now = new Date().toISOString();
-const paths = ['/', '/trailready.html', '/privacy.html'];
+const paths = ['/', '/products.html', '/trailready.html', '/privacy.html'];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${paths

@@ -147,6 +147,7 @@ function App() {
         </a>
         <nav className="main-nav" aria-label="Hovednavigasjon">
           <a href="#services">Tjenester</a>
+          <a href="/products.html">Produkter</a>
           <a href="#process">Prosess</a>
           <a href="#contact">Kontakt</a>
         </nav>
@@ -369,6 +370,7 @@ function App() {
           <span>AI, automasjon og interne verktøy.</span>
         </div>
         <nav aria-label="Footer">
+          <a href="/products.html">Produkter</a>
           <a href="/trailready.html">TrailReady</a>
           <a href="/privacy.html">Privacy</a>
           <a href="#contact">Kontakt</a>

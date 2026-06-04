@@ -32,6 +32,7 @@ See [GOOGLE_PLAY.md](GOOGLE_PLAY.md) for TrailReady privacy/Data safety alignmen
 ## Pages
 
 - `/` company and services website
+- `/products.html` product overview for Search & Index, TrailReady, and internal tools
 - `/trailready.html` TrailReady support / app landing page
 - `/privacy.html` TrailReady privacy policy for Google Play / beta use
 - `/robots.txt` crawler allow file

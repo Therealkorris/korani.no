@@ -12,6 +12,7 @@ npm run build
 Then verify these local URLs while the dev or preview server is running:
 
 - `/`
+- `/products.html`
 - `/trailready.html`
 - `/privacy.html`
 - `/robots.txt`
@@ -75,6 +76,7 @@ After deployment, use absolute HTTPS URLs:
 Privacy policy: https://therealkorris.github.io/privacy.html
 App/support website: https://therealkorris.github.io/trailready.html
 Company website: https://therealkorris.github.io/
+Product overview: https://therealkorris.github.io/products.html
 ```
 
 The privacy policy URL must stay publicly reachable while the app is available on Google Play.

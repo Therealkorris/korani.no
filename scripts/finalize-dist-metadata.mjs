@@ -39,6 +39,22 @@ const pages = [
     },
   },
   {
+    file: 'dist/products.html',
+    path: '/products.html',
+    structuredData: {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: 'Produkter | Korani Solutions AS',
+      url: `${siteUrl}/products.html`,
+      isPartOf: {
+        '@type': 'WebSite',
+        name: 'Korani Solutions AS',
+        url: siteUrl,
+      },
+      about: ['Search & Index', 'TrailReady', 'automation tools', 'AI workflows'],
+    },
+  },
+  {
     file: 'dist/trailready.html',
     path: '/trailready.html',
     structuredData: {
