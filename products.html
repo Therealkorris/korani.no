@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Produkter og egne verktøy fra Korani Solutions AS: Search & Index, TrailReady og interne automasjonsverktøy."
+    />
+    <meta property="og:title" content="Produkter | Korani Solutions AS" />
+    <meta
+      property="og:description"
+      content="En kort produktoversikt fra Korani Solutions AS."
+    />
+    <meta property="og:image" content="https://korani.no/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Produkter | Korani Solutions AS" />
+    <meta
+      name="twitter:description"
+      content="Search & Index, TrailReady og automasjonsverktøy fra Korani Solutions AS."
+    />
+    <meta name="twitter:image" content="https://korani.no/og-image.png" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://korani.no/products.html" />
+    <title>Produkter | Korani Solutions AS</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        --ink: #14191c;
+        --muted: #5f6d74;
+        --paper: #f3f4ef;
+        --surface: #ffffff;
+        --line: #d9ded8;
+        --night: #101416;
+        --green: #176b55;
+        --cream: #f4edd9;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        background: var(--paper);
+        color: var(--ink);
+        letter-spacing: 0;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: grid;
+        grid-template-columns: minmax(230px, 1fr) auto minmax(150px, 1fr);
+        align-items: center;
+        gap: 20px;
+        min-height: 72px;
+        padding: 12px clamp(18px, 4vw, 58px);
+        background: rgba(16, 20, 22, 0.94);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        color: #f8fbf7;
+      }
+
+      .brand-lockup {
+        display: inline-grid;
+        grid-template-columns: 42px minmax(0, 1fr);
+        align-items: center;
+        gap: 12px;
+        width: fit-content;
+        text-decoration: none;
+      }
+
+      .brand-mark {
+        display: grid;
+        place-items: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 8px;
+        background: var(--green);
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 900;
+      }
+
+      .brand-lockup strong,
+      .brand-lockup small {
+        display: block;
+      }
+
+      .brand-lockup small {
+        margin-top: 2px;
+        color: #b6c5be;
+        font-size: 12px;
+      }
+
+      .main-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        padding: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .main-nav a {
+        min-height: 34px;
+        padding: 8px 12px;
+        border-radius: 6px;
+        color: #edf4ef;
+        font-size: 14px;
+        text-decoration: none;
+      }
+
+      .main-nav a[aria-current="page"] {
+        background: rgba(255, 255, 255, 0.13);
+      }
+
+      .header-cta,
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        min-height: 42px;
+        padding: 11px 15px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        font-weight: 850;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .header-cta,
+      .button.primary {
+        background: var(--cream);
+        color: #14201c;
+      }
+
+      .header-cta {
+        justify-self: end;
+      }
+
+      .button.secondary {
+        background: #ffffff;
+        border-color: var(--line);
+        color: #16212b;
+      }
+
+      .page-hero {
+        display: grid;
+        grid-template-columns: minmax(0, 0.86fr) minmax(280px, 0.5fr);
+        gap: clamp(24px, 5vw, 64px);
+        align-items: end;
+        min-height: 420px;
+        padding: clamp(58px, 8vw, 112px) clamp(18px, 5vw, 78px) clamp(40px, 6vw, 70px);
+        background:
+          linear-gradient(90deg, rgba(13, 17, 19, 0.95), rgba(13, 17, 19, 0.72)),
+          url("/work/korani-automation-hero.jpg") center / cover no-repeat;
+        color: #ffffff;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: #94e0b8;
+        font-size: 13px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 780px;
+        margin: 0;
+        font-size: clamp(42px, 6vw, 78px);
+        line-height: 1;
+      }
+
+      .lead,
+      .hero-note {
+        line-height: 1.55;
+      }
+
+      .lead {
+        margin: 18px 0 0;
+        max-width: 650px;
+        color: #dfe9e3;
+        font-size: clamp(18px, 2vw, 22px);
+      }
+
+      .hero-note {
+        margin: 0;
+        padding: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.08);
+        color: #edf5ef;
+      }
+
+      .products-section,
+      .contact-strip {
+        padding: clamp(46px, 7vw, 88px) clamp(18px, 5vw, 78px);
+      }
+
+      .products-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .product-card {
+        display: grid;
+        grid-template-columns: 72px minmax(0, 1fr);
+        gap: 20px;
+        min-height: 250px;
+        padding: clamp(22px, 3vw, 30px);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+        box-shadow: 0 14px 38px rgba(33, 45, 52, 0.06);
+      }
+
+      .product-card.featured {
+        grid-column: span 2;
+        grid-template-columns: 84px minmax(0, 1fr);
+        background:
+          linear-gradient(135deg, rgba(23, 107, 85, 0.13), transparent 48%),
+          #ffffff;
+      }
+
+      .product-mark {
+        display: grid;
+        place-items: center;
+        width: 72px;
+        height: 72px;
+        border-radius: 8px;
+        background: #16201c;
+        color: #f4edd9;
+        font-size: 24px;
+        font-weight: 950;
+      }
+
+      .product-card.featured .product-mark {
+        width: 84px;
+        height: 84px;
+        background: var(--green);
+      }
+
+      .status {
+        display: inline-flex;
+        width: fit-content;
+        margin-bottom: 14px;
+        padding: 7px 9px;
+        border-radius: 8px;
+        background: #dcece5;
+        color: #164938;
+        font-size: 13px;
+        font-weight: 850;
+      }
+
+      .product-card h2,
+      .product-card h3 {
+        margin: 0;
+        line-height: 1.04;
+      }
+
+      .product-card h2 {
+        font-size: clamp(32px, 4vw, 48px);
+      }
+
+      .product-card h3 {
+        font-size: 27px;
+      }
+
+      .product-card p {
+        max-width: 760px;
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.55;
+      }
+
+      .tag-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 18px;
+      }
+
+      .tag-row span {
+        padding: 7px 9px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: #46545c;
+        font-size: 13px;
+        font-weight: 760;
+      }
+
+      .product-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 22px;
+      }
+
+      .contact-strip {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        background: #16201c;
+        color: #f8fbf7;
+      }
+
+      .contact-strip h2,
+      .contact-strip p {
+        margin: 0;
+      }
+
+      .contact-strip h2 {
+        font-size: clamp(30px, 4vw, 48px);
+        line-height: 1.05;
+      }
+
+      .contact-strip p {
+        margin-top: 10px;
+        color: #c9d7d0;
+        line-height: 1.55;
+      }
+
+      .site-footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 26px clamp(18px, 5vw, 78px);
+        background: #ffffff;
+        border-top: 1px solid var(--line);
+      }
+
+      .site-footer div,
+      .site-footer nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .site-footer span,
+      .site-footer a {
+        color: #61707a;
+      }
+
+      @media (max-width: 940px) {
+        .page-hero,
+        .products-grid,
+        .contact-strip {
+          grid-template-columns: 1fr;
+        }
+
+        .product-card,
+        .product-card.featured {
+          grid-column: auto;
+          grid-template-columns: 1fr;
+        }
+
+        .contact-strip {
+          display: grid;
+        }
+      }
+
+      @media (max-width: 840px) {
+        .site-header {
+          grid-template-columns: 1fr auto;
+        }
+
+        .main-nav {
+          display: none;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .site-header {
+          min-height: 66px;
+          padding: 10px 14px;
+        }
+
+        .brand-lockup {
+          grid-template-columns: 40px minmax(0, 1fr);
+        }
+
+        .brand-mark {
+          width: 40px;
+          height: 40px;
+        }
+
+        .brand-lockup strong {
+          font-size: 14px;
+        }
+
+        .brand-lockup small {
+          font-size: 11px;
+        }
+
+        .header-cta {
+          padding-inline: 12px;
+          font-size: 13px;
+        }
+
+        h1 {
+          font-size: clamp(38px, 12vw, 54px);
+        }
+
+        .site-footer {
+          display: grid;
+        }
+      }
+    </style>
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Produkter | Korani Solutions AS","url":"https://korani.no/products.html","isPartOf":{"@type":"WebSite","name":"Korani Solutions AS","url":"https://korani.no"},"about":["Search & Index","TrailReady","automation tools","AI workflows"]}</script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand-lockup" href="/" aria-label="Korani Solutions AS hjem">
+        <span class="brand-mark">K</span>
+        <span>
+          <strong>Korani Solutions AS</strong>
+          <small>AI, automasjon og verktøy</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Hovednavigasjon">
+        <a href="/#services">Tjenester</a>
+        <a href="/products.html" aria-current="page">Produkter</a>
+        <a href="/#process">Prosess</a>
+        <a href="/#contact">Kontakt</a>
+      </nav>
+      <a class="header-cta" href="/#contact">Book en prat</a>
+    </header>
+
+    <main>
+      <section class="page-hero" aria-labelledby="products-title">
+        <div>
+          <p class="eyebrow">Produkter</p>
+          <h1 id="products-title">Egne verktøy og produkter.</h1>
+          <p class="lead">
+            En kort oversikt over ting jeg bygger selv, fra offentlige produkter til interne verktøy
+            som kan bli kundeprosjekter.
+          </p>
+        </div>
+        <p class="hero-note">
+          Screenshots og demoer kommer når nye versjoner er klare. Denne siden er laget for å være
+          ryddig, lett å oppdatere og enkel å peke folk videre til.
+        </p>
+      </section>
+
+      <section class="products-section" aria-label="Produktoversikt">
+        <div class="products-grid">
+          <article class="product-card featured">
+            <div class="product-mark" aria-hidden="true">SI</div>
+            <div>
+              <span class="status">Public website</span>
+              <h2>Search &amp; Index</h2>
+              <p>
+                Search &amp; Index er laget for tungt filarbeid: søk, sammenligning, sammenslåing og
+                repeterbare workflows på tvers av mapper og dokumenter. V3 er under utvikling.
+              </p>
+              <div class="tag-row" aria-label="Search and Index egenskaper">
+                <span>File workflows</span>
+                <span>Search</span>
+                <span>Compare</span>
+                <span>Merge</span>
+              </div>
+              <div class="product-actions">
+                <a class="button primary" href="https://searchandindex.com" target="_blank" rel="noreferrer">
+                  Searchandindex.com
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-mark" aria-hidden="true">TR</div>
+            <div>
+              <span class="status">Android app</span>
+              <h3>TrailReady / Turapp</h3>
+              <p>
+                Turplanlegging, pakkelister og utstyr med lokal lagring. Appen klargjøres for
+                Google Play med egen support- og personvernside.
+              </p>
+              <div class="tag-row">
+                <span>Android</span>
+                <span>Local-first</span>
+                <span>Trips</span>
+                <span>Packing</span>
+              </div>
+              <div class="product-actions">
+                <a class="button secondary" href="/trailready.html">Se TrailReady</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-mark" aria-hidden="true">KS</div>
+            <div>
+              <span class="status">Internal tools</span>
+              <h3>Automation tools</h3>
+              <p>
+                Egne verktøy for dokumenter, tekniske data, import, eksport og prosesser som bør
+                gjøres raskere og mer kontrollerbart.
+              </p>
+              <div class="tag-row">
+                <span>Engineering</span>
+                <span>Documents</span>
+                <span>Data flow</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-mark" aria-hidden="true">AI</div>
+            <div>
+              <span class="status">Lab</span>
+              <h3>AI workflows</h3>
+              <p>
+                Små AI-verktøy for analyse, sortering, assistenter og interne arbeidsflyter. Mer
+                legges ut når det er riktig å vise offentlig.
+              </p>
+              <div class="tag-row">
+                <span>AI</span>
+                <span>Agents</span>
+                <span>Workflow</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-strip" aria-labelledby="product-contact-title">
+        <div>
+          <h2 id="product-contact-title">Har du en prosess som burde bli et verktøy?</h2>
+          <p>Send noen linjer om hva som tar tid, så finner vi ut om det er noe å bygge.</p>
+        </div>
+        <a class="button primary" href="/#contact">Kontakt meg</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Korani Solutions AS</strong>
+        <span>AI, automasjon og interne verktøy.</span>
+      </div>
+      <nav aria-label="Footer">
+        <a href="/products.html">Produkter</a>
+        <a href="/trailready.html">TrailReady</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/#contact">Kontakt</a>
+      </nav>
+    </footer>
+  </body>
+</html>
