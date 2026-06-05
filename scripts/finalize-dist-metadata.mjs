@@ -27,9 +27,10 @@ const pages = [
       sameAs: ['https://github.com/Therealkorris'],
       areaServed: 'Norway',
       description:
-        'Korani Solutions AS builds automation, AI assistants, internal tools, and engineering documentation workflows for documents, files, technical data, and control-system related work.',
+        'Korani Solutions AS builds document automation, AI assistants, internal tools, and technical data workflows for PDFs, Excel files, engineering documentation, SCD/AML, and control-system data.',
       knowsAbout: [
         'Document automation',
+        'PDF and Excel automation',
         'File workflows',
         'Engineering documentation automation',
         'SCD and AML analysis',

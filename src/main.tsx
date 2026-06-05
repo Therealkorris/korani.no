@@ -40,7 +40,7 @@ const services: Service[] = [
   {
     icon: Wrench,
     title: 'Interne verktøy',
-    text: 'Små web-, desktop- og mobilverktøy for arbeidsprosesser som standardprogrammer ikke dekker godt nok: import, eksport, rapportering og oversikt.',
+    text: 'Små web-, desktop- og mobilverktøy for oppgaver som trenger egen flyt: import, eksport, rapportering, datakontroll og oversikt.',
   },
   {
     icon: Database,
@@ -162,9 +162,9 @@ function App() {
             <p className="eyebrow hero-eyebrow">Korani Solutions AS</p>
             <h1 id="hero-title">Automatisering for dokumenter, filer og tekniske data.</h1>
             <p className="hero-lead">
-              Jeg hjelper bedrifter med oppgaver som havner mellom standardprogrammene: PDF-er som
-              må leses, Excel-ark som må sammenlignes, engineeringdokumentasjon som må produseres,
-              og data som må kobles før noen kan ta en beslutning.
+              Jeg hjelper bedrifter med arbeidsflyter som faller mellom systemene: PDF-er som må
+              leses, Excel-ark som må sammenlignes, engineeringdokumentasjon som må produseres, og
+              tagdata som må kobles mot filer, maler eller kontrollsystemunderlag.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#contact">
@@ -233,7 +233,7 @@ function App() {
         <section id="process" className="section-block process-section" aria-labelledby="process-title">
           <div className="section-heading compact">
             <p className="eyebrow">Arbeidsmåte</p>
-            <h2 id="process-title">Først finner vi flaskehalsen. Så bygger vi rundt den.</h2>
+            <h2 id="process-title">Først ser vi filene og reglene. Så bygger vi flyten.</h2>
           </div>
 
           <div className="process-grid">
@@ -250,7 +250,7 @@ function App() {
         <section className="about-section" aria-labelledby="about-title">
           <div className="about-copy">
             <p className="eyebrow">Om Jonas</p>
-            <h2 id="about-title">Jonas Korani: automasjon, kontrollsystemer, engineering docs og software.</h2>
+            <h2 id="about-title">Jonas Korani: automasjon, kontrollsystemer, engineeringdokumentasjon og software.</h2>
             <p>
               Jeg har bakgrunn fra automasjon, kontrollsystemer, engineering-dokumentasjon og
               software. Arbeidet mitt ligger ofte der tekniske dokumenter, tagdata, filstruktur,
@@ -282,7 +282,7 @@ function App() {
         <section id="contact" className="contact-section" aria-labelledby="contact-title">
           <div className="contact-copy">
             <p className="eyebrow">Kontakt</p>
-            <h2 id="contact-title">Send meg arbeidsflyten dere vil ha ut av manuelt arbeid.</h2>
+            <h2 id="contact-title">Send meg flyten dere fortsatt gjør manuelt.</h2>
             <p>
               Beskriv hvilke filer, skjermbilder, systemer og leveranser som er involvert. Jeg svarer
               med en konkret vurdering av hva som kan automatiseres, hvor første leveranse bør ligge,
