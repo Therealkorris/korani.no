@@ -61,16 +61,16 @@ const useCases = [
 
 const processSteps = [
   {
-    title: 'Finn flaskehalsen',
-    text: 'Vi starter med hva som faktisk stjeler tid: input, feil, systemer, manuelle vurderinger og ønsket sluttresultat.',
+    title: 'Kartlegg jobben slik den faktisk skjer',
+    text: 'Vi går gjennom filer, systemer, manuelle valg, feilpunkter og hva som må leveres til slutt. Først finner vi hvor verktøyet faktisk skal treffe.',
   },
   {
-    title: 'Bygg på ekte data',
-    text: 'Jeg lager en første versjon som kan testes på reelle filer, dokumenter eller arbeidssteg, ikke bare en pen demo.',
+    title: 'Bygg første fungerende arbeidsflyt',
+    text: 'Jeg lager en praktisk versjon på ekte input, med nok import, preview, kontroll og eksport til at dere kan kjenne om løsningen sparer tid.',
   },
   {
-    title: 'Lever noe som kan brukes',
-    text: 'Preview, logging, eksport, feilhåndtering og manuell kontroll kommer inn før løsningen skaleres videre.',
+    title: 'Gjør løsningen trygg å bruke',
+    text: 'Når flyten fungerer, strammes den opp med feilhåndtering, logging, manuell overstyring og tydelige resultater, slik at den tåler hverdagen.',
   },
 ];
 
@@ -233,8 +233,8 @@ function App() {
 
         <section id="process" className="section-block process-section" aria-labelledby="process-title">
           <div className="section-heading compact">
-            <p className="eyebrow">Prosess</p>
-            <h2 id="process-title">Rask avklaring, praktisk bygging og tydelig vei videre.</h2>
+            <p className="eyebrow">Slik jobber jeg</p>
+            <h2 id="process-title">Fra rotete arbeidsflyt til et verktøy folk faktisk bruker.</h2>
           </div>
 
           <div className="process-grid">
