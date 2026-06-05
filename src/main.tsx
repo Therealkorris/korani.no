@@ -29,64 +29,72 @@ type Service = {
 const services: Service[] = [
   {
     icon: Hammer,
-    title: 'Dokument- og filautomatisering',
-    text: 'Fra import til ferdig leveranse: verktøy som leser PDF-er, Excel-ark og mapper, fyller maler, gjør kontroller og lager eksport som kan sendes videre.',
+    title: 'Effektivisering av arbeidsflyter',
+    text: 'Gjentatte oppgaver gjøres om til stabile flyter som henter data, gjør sjekker og sender arbeidet videre.',
   },
   {
     icon: Bot,
-    title: 'AI for dokumenter og data',
-    text: 'Assistenter som søker, sorterer, oppsummerer og finner avvik i egne dokumenter og datasett, med synlig kildegrunnlag og menneskelig kontroll.',
+    title: 'AI-løsninger i praksis',
+    text: 'AI-assistenter for søk, sortering, oppsummering og beslutningsstøtte i egne dokumenter og data.',
   },
   {
     icon: Wrench,
-    title: 'Interne verktøy',
-    text: 'Små web-, desktop- og mobilverktøy for oppgaver som trenger egen flyt: import, eksport, rapportering, datakontroll og oversikt.',
+    title: 'Automasjon og interne verktøy',
+    text: 'Skreddersydde web-, desktop- eller mobilverktøy for registrering, oversikt, rapportering og daglig oppfølging.',
   },
   {
     icon: Database,
-    title: 'Engineeringdata og tekniske flyter',
-    text: 'Parsing, mapping og koblinger mellom SCD, AML, kontrollsystemdata, PDF-er og tekniske underlag som ellers må følges opp manuelt.',
+    title: 'Systemintegrasjon og software',
+    text: 'Kobler API-er, filer og databaser, og bygger prototyper som kan prøves på ekte arbeid.',
   },
 ];
 
-const useCases = [
-  'PDF-er, Excel-ark og mapper inn i en repeterbar flyt',
-  'Produksjon av engineeringdokumentasjon fra maler og data',
-  'Søk, indeks, sammenligning og sammenslåing av filer',
-  'SCD/AML-analyse, datauttrekk og koblinger',
-  'AI-assistenter for sortering, oppsummering og avvik',
-  'MVP-er og interne verktøy for egne arbeidsprosesser',
+const problems = [
+  'Manuell punching mellom systemer',
+  'Tidsbruk på rapportering',
+  'Filrot og vanskelig gjenfinning',
+  'Gjentatte kontroller',
+  'Data som flyttes for hånd',
+];
+
+const deliverables = [
+  'Intern app',
+  'AI-assistent',
+  'Automatisert rapport',
+  'Dashboard',
+  'Dataflyt mellom systemer',
+  'Script for gjentatte jobber',
 ];
 
 const processSteps = [
   {
-    title: 'Kartlegg dagens leveranse',
-    text: 'Vi går gjennom eksempelmapper, dokumenter, skjermbilder, systemer og de manuelle valgene som avgjør kvaliteten. Målet er å se hva som faktisk må produseres.',
+    title: 'Avklar arbeidsflyten',
+    text: 'Vi ser på dagens steg, systemer, filer og hvor tiden forsvinner.',
   },
   {
-    title: 'Bygg en fungerende flyt',
-    text: 'Jeg bygger på reelle filer, maler, API-er, datauttrekk eller fagregler. Første leveranse skal gjøre en avgrenset jobb fra start til slutt.',
+    title: 'Bygg løsningen',
+    text: 'Jeg bygger en praktisk løsning på ekte data og reelle arbeidsvaner.',
   },
   {
-    title: 'Stram inn for drift',
-    text: 'Når flyten treffer, legges det inn feilhåndtering, logging, eksport, rettigheter, dokumentasjon og sjekkpunkter der fagfolk fortsatt skal bestemme.',
+    title: 'Få den i bruk',
+    text: 'Vi strammer inn, dokumenterer og gjør løsningen klar for drift.',
   },
 ];
 
 const backgroundSignals = [
-  'Bygger på reelle filer',
-  'Dokumenterer valg og begrensninger',
-  'Legger inn kontrollpunkter',
-  'Leverer kode som kan overtas',
+  'Forstår arbeidsflyten først',
+  'Bygger på ekte data',
+  'Dokumenterer nok til drift',
+  'Kan videreutvikles',
 ];
 
 const bookingOptions = [
-  'Dokumentautomatisering',
-  'AI for dokument/data',
+  'Effektivisering',
+  'AI-løsning',
+  'Automasjon',
   'Internt verktøy',
-  'Engineeringdata',
-  'Produkt / MVP',
-  'Teknisk bistand',
+  'Systemintegrasjon',
+  'Software / prototype',
 ];
 
 type FormState = {
@@ -117,7 +125,7 @@ function App() {
       `Behov: ${selectedNeed}`,
       `Tidshorisont: ${form.timeline}`,
       '',
-      'Kort om oppgaven:',
+      'Kort om arbeidsflyten:',
       form.message,
     ].join('\n');
 
@@ -141,7 +149,7 @@ function App() {
           <span className="brand-mark">K</span>
           <span>
             <strong>Korani Solutions AS</strong>
-            <small>Dokumentflyt, AI og interne verktøy</small>
+            <small>Effektivisering, AI og software</small>
           </span>
         </a>
         <nav className="main-nav" aria-label="Hovednavigasjon">
@@ -160,16 +168,16 @@ function App() {
         <section className="hero-section" aria-labelledby="hero-title">
           <div className="hero-content">
             <p className="eyebrow hero-eyebrow">Korani Solutions AS</p>
-            <h1 id="hero-title">Automatisering for dokumenter, filer og tekniske data.</h1>
+            <h1 id="hero-title">Effektivisering, AI og software for arbeidsflyter som stjeler tid.</h1>
             <p className="hero-lead">
-              Jeg hjelper bedrifter med arbeidsflyter som faller mellom systemene: PDF-er som må
-              leses, Excel-ark som må sammenlignes, engineeringdokumentasjon som må produseres, og
-              tagdata som må kobles mot filer, maler eller kontrollsystemunderlag.
+              Korani Solutions kartlegger manuelle prosesser og bygger praktiske løsninger som
+              automatiserer arbeid, kobler systemer sammen og gir folk bedre verktøy i hverdagen,
+              uten å gjøre prosjektet større enn nødvendig.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#contact">
                 <Mail size={18} aria-hidden="true" />
-                Beskriv oppgaven
+                Bestill en vurdering
               </a>
               <a className="button secondary" href="#services">
                 <ArrowRight size={18} aria-hidden="true" />
@@ -180,27 +188,38 @@ function App() {
           <div className="hero-panel" aria-label="Kort om Korani Solutions">
             <span>
               <CheckCircle2 size={17} aria-hidden="true" />
-              PDF, Excel, mapper og tekniske dokumenter inn i samme flyt
+              AI der det sparer tid eller gir bedre beslutningsgrunnlag
             </span>
             <span>
               <CheckCircle2 size={17} aria-hidden="true" />
-              AI-assistenter med kilder, kontroll og manuell overstyring
+              Automasjon rundt eksisterende systemer
             </span>
             <span>
               <CheckCircle2 size={17} aria-hidden="true" />
-              Interne verktøy bygget rundt måten arbeidet faktisk leveres
+              Interne verktøy som tas i bruk
             </span>
+          </div>
+        </section>
+
+        <section className="focus-band" aria-labelledby="problem-title">
+          <div>
+            <p className="eyebrow">Typiske problemer</p>
+            <h2 id="problem-title">Arbeid som tar tid uten å skape verdi.</h2>
+          </div>
+          <div className="use-case-list">
+            {problems.map((item) => (
+              <span key={item}>{item}</span>
+            ))}
           </div>
         </section>
 
         <section id="services" className="section-block services-section" aria-labelledby="services-title">
           <div className="section-heading">
             <p className="eyebrow">Tjenester</p>
-            <h2 id="services-title">Når filene, malene og systemene ikke snakker godt nok sammen.</h2>
+            <h2 id="services-title">Praktiske løsninger for arbeid som gjentar seg.</h2>
             <p>
-              Korani Solutions AS ved Jonas Korani bygger verktøy for de praktiske oppgavene som ofte
-              blir liggende på fagfolk: kopiere data, sjekke dokumenter, sammenligne filer, produsere
-              underlag og holde oversikt mellom tekniske systemer.
+              Oppgaven er å spare tid: færre manuelle steg, færre feil og bedre flyt mellom folk,
+              filer, data og systemer.
             </p>
           </div>
 
@@ -218,13 +237,13 @@ function App() {
           </div>
         </section>
 
-        <section className="focus-band" aria-labelledby="focus-title">
+        <section className="focus-band" aria-labelledby="deliverables-title">
           <div>
-            <p className="eyebrow">Hva du får</p>
-            <h2 id="focus-title">Leveranser som fjerner manuelle steg fra faktiske arbeidsdager.</h2>
+            <p className="eyebrow">Hva kunden får</p>
+            <h2 id="deliverables-title">Konkrete løsninger som kan settes i arbeid.</h2>
           </div>
           <div className="use-case-list">
-            {useCases.map((item) => (
+            {deliverables.map((item) => (
               <span key={item}>{item}</span>
             ))}
           </div>
@@ -233,7 +252,7 @@ function App() {
         <section id="process" className="section-block process-section" aria-labelledby="process-title">
           <div className="section-heading compact">
             <p className="eyebrow">Arbeidsmåte</p>
-            <h2 id="process-title">Først ser vi filene og reglene. Så bygger vi flyten.</h2>
+            <h2 id="process-title">Forstå arbeidsflyten, bygg løsningen, få den i drift.</h2>
           </div>
 
           <div className="process-grid">
@@ -247,29 +266,29 @@ function App() {
           </div>
         </section>
 
-        <section className="about-section" aria-labelledby="about-title">
+        <section className="about-section" aria-labelledby="proof-title">
           <div className="about-copy">
-            <p className="eyebrow">Om Jonas</p>
-            <h2 id="about-title">Jonas Korani: automasjon, kontrollsystemer, engineeringdokumentasjon og software.</h2>
+            <p className="eyebrow">Troverdighet</p>
+            <h2 id="proof-title">Erfaring med søk, apper og arbeidsflyter.</h2>
             <p>
-              Jeg har bakgrunn fra automasjon, kontrollsystemer, engineering-dokumentasjon og
-              software. Arbeidet mitt ligger ofte der tekniske dokumenter, tagdata, filstruktur,
-              kvalitetssjekk og kode møtes.
+              <strong>Search & Index:</strong> handler om store informasjonsmengder: søk,
+              indeksering, sammenligning og strukturering av filer. Målet er å gjøre rotete data og
+              dokumenter mulig å finne, bearbeide og bruke i en arbeidsflyt.
             </p>
             <p>
-              Egenutviklede prosjekter som Search & Index, TrailReady/Turapp, SCD_copy, AML_Analyzer
-              og Visio_web viser retningen: hente ut data, gjøre dokumentproduksjon raskere, bygge
-              oversikt og lage verktøy folk kan bruke uten å endre hele virksomheten rundt dem.
+              <strong>TrailReady/Turapp:</strong> handler om hvordan en konkret arbeidsflyt kan gjøres
+              enkel å bruke, fra idé til brukbar Android-opplevelse med lokal lagring,
+              turplanlegging, pakkelister og flyter rundt utstyr.
             </p>
           </div>
 
           <div className="signal-card">
             <ShieldCheck size={30} aria-hidden="true" />
-            <h3>Typiske leveranser</h3>
+            <h3>Om Korani Solutions</h3>
             <p>
-              Et script som fjerner kopiering, en intern webapp, en data-parser, en AI-assistent eller
-              en modul som produserer dokumentunderlag. Bygget med nok struktur til at løsningen kan
-              forklares, driftes og videreutvikles.
+              Korani Solutions AS drives av Jonas Korani og leverer praktisk effektivisering for
+              bedrifter. Arbeidet handler om å forstå hvordan jobben faktisk gjøres, finne manuelle
+              tidstyver og bygge software, automasjon og AI-løsninger som kan tas i bruk.
             </p>
             <div>
               {backgroundSignals.map((signal) => (
@@ -282,11 +301,11 @@ function App() {
         <section id="contact" className="contact-section" aria-labelledby="contact-title">
           <div className="contact-copy">
             <p className="eyebrow">Kontakt</p>
-            <h2 id="contact-title">Send meg flyten dere fortsatt gjør manuelt.</h2>
+            <h2 id="contact-title">Send noen linjer om det dere fortsatt gjør manuelt.</h2>
             <p>
-              Beskriv hvilke filer, skjermbilder, systemer og leveranser som er involvert. Jeg svarer
-              med en konkret vurdering av hva som kan automatiseres, hvor første leveranse bør ligge,
-              og hvilke deler som fortsatt bør ha faglig kontroll.
+              Beskriv hva som gjøres manuelt i dag, hvilke systemer eller filer som er involvert, og
+              hva dere ønsker å få ut. Jeg svarer med en konkret vurdering av mulige løsninger og
+              neste steg.
             </p>
             <div className="direct-contact">
               <a href={`mailto:${contactEmail}`}>
@@ -352,7 +371,7 @@ function App() {
                 rows={5}
                 value={form.message}
                 onChange={(event) => updateForm('message', event.target.value)}
-                placeholder="Hva gjøres manuelt i dag, hvilke filer eller systemer er involvert, og hva skal komme ut på andre siden?"
+                placeholder="Hva gjøres manuelt i dag, hvilke systemer er involvert, og hva skal komme ut på andre siden?"
               />
             </label>
             <div className="form-actions">
@@ -372,7 +391,7 @@ function App() {
       <footer className="site-footer">
         <div>
           <strong>Korani Solutions AS</strong>
-          <span>Dokumentflyt, AI og interne verktøy.</span>
+          <span>Effektivisering, AI og software.</span>
         </div>
         <nav aria-label="Footer">
           <a href="/products.html">Produkter</a>
