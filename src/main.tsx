@@ -30,62 +30,62 @@ type Service = {
 const services: Service[] = [
   {
     icon: Hammer,
-    title: 'Automatisering',
-    text: 'Manuelle prosesser, dokumentflyt, rapporter, filer og gjentakende arbeid gjort om til kontrollerbare verktøy.',
+    title: 'Arbeidsflyt og automasjon',
+    text: 'Jeg bygger verktøy rundt jobben slik den faktisk gjøres: filer, dokumenter, mapper, skjema, Excel, PDF, systemdata og manuelle steg.',
   },
   {
     icon: Bot,
-    title: 'Praktisk AI',
-    text: 'AI-arbeidsflyter som hjelper med analyse, sortering, tekst, beslutningsstøtte og produksjon uten å miste kontroll.',
+    title: 'AI med kontroll',
+    text: 'AI-løsninger for analyse, sortering, tekst, søk og beslutningsstøtte, med tydelige kilder, manuell overstyring og praktisk bruk.',
   },
   {
     icon: Wrench,
-    title: 'Interne verktøy',
-    text: 'Små og store apper, dashboards og arbeidsflater bygget rundt hvordan folk faktisk jobber.',
+    title: 'Interne verktøy og apper',
+    text: 'Desktop-, web- og mobilverktøy som samler arbeidsflaten, reduserer klikking og gjør komplekse oppgaver enklere å utføre.',
   },
   {
     icon: Database,
-    title: 'Tekniske data',
-    text: 'Strukturering, sammenligning og kobling av dokumenter, regneark, mapper og systemdata som ikke snakker godt sammen.',
+    title: 'Tekniske data og dokumentasjon',
+    text: 'Parsing, kobling og produksjon av teknisk dokumentasjon, kontrollsystemdata, engineering-underlag og strukturer som vanligvis er tunge å få oversikt over.',
   },
 ];
 
 const useCases = [
-  'Fjerne repeterende manuelt arbeid',
-  'Bygge MVP eller internt produkt',
-  'Automatisere tekniske dokumenter',
-  'Lage AI-agent eller assistent',
-  'Rydde i fil- og dataflyt',
-  'Forbedre eksisterende verktøy',
+  'Automatisere dokumentproduksjon',
+  'Finne koblinger i store datagrunnlag',
+  'Bygge interne verktøy for fagfolk',
+  'Lage AI-assistenter for ekte arbeidsflyt',
+  'Gjøre filarbeid søkbart og repeterbart',
+  'Bygge MVP, app eller produktmodul',
 ];
 
 const processSteps = [
   {
-    title: 'Avklar problemet',
-    text: 'Vi starter med arbeidet som tar tid: filer, mennesker, systemer, feil og ønsket resultat.',
+    title: 'Finn flaskehalsen',
+    text: 'Vi starter med hva som faktisk stjeler tid: input, feil, systemer, manuelle vurderinger og ønsket sluttresultat.',
   },
   {
-    title: 'Bygg en liten versjon',
-    text: 'Jeg lager en praktisk prototype eller første modul som kan testes på ekte input.',
+    title: 'Bygg på ekte data',
+    text: 'Jeg lager en første versjon som kan testes på reelle filer, dokumenter eller arbeidssteg, ikke bare en pen demo.',
   },
   {
-    title: 'Gjør det trygt å bruke',
-    text: 'Preview, logging, manuell kontroll, eksport og tydelige feilmeldinger kommer før skalering.',
+    title: 'Lever noe som kan brukes',
+    text: 'Preview, logging, eksport, feilhåndtering og manuell kontroll kommer inn før løsningen skaleres videre.',
   },
 ];
 
 const backgroundSignals = [
-  'Senior automation engineer',
-  'Kontrollsystemer og engineering',
-  'AI, software og produktbygging',
-  'Korani Solutions AS',
+  'Kartlegging av arbeidsflyt',
+  'Prototype på ekte input',
+  'Produksjonsklar verktøyflyt',
+  'Videreutvikling og overlevering',
 ];
 
 const bookingOptions = [
-  'Automatisering',
-  'AI-arbeidsflyt',
+  'Prosessautomatisering',
+  'AI-assistent',
   'Internt verktøy',
-  'Teknisk dataflyt',
+  'Engineering/dataflyt',
   'MVP / app',
   'Konsulentbistand',
 ];
@@ -161,10 +161,11 @@ function App() {
         <section className="hero-section" aria-labelledby="hero-title">
           <div className="hero-content">
             <p className="eyebrow hero-eyebrow">Korani Solutions AS</p>
-            <h1 id="hero-title">AI og automasjon for arbeid som tar for mye tid.</h1>
+            <h1 id="hero-title">Verktøy, AI og automasjon for arbeidsflyter som må gå raskere.</h1>
             <p className="hero-lead">
-              Jeg hjelper bedrifter med å automatisere manuelle prosesser, bygge interne verktøy og
-              bruke AI på en praktisk måte.
+              Jeg hjelper bedrifter med å gjøre tunge, manuelle og tekniske oppgaver om til
+              kontrollerbare systemer. Mindre leting, mindre dobbeltarbeid, færre manuelle steg og
+              mer flyt i jobben som faktisk skal leveres.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#contact">
@@ -180,15 +181,15 @@ function App() {
           <div className="hero-panel" aria-label="Kort om Korani Solutions">
             <span>
               <CheckCircle2 size={17} aria-hidden="true" />
-              Senior automation engineer
+              Automatisering av dokumenter, filer og systemdata
             </span>
             <span>
               <CheckCircle2 size={17} aria-hidden="true" />
-              AI, software og tekniske arbeidsflyter
+              AI-løsninger med praktisk kontroll
             </span>
             <span>
               <CheckCircle2 size={17} aria-hidden="true" />
-              Små oppdrag, prototyper og leveranser
+              Konsulentoppdrag, prototyper og produktbygging
             </span>
           </div>
         </section>
@@ -196,10 +197,11 @@ function App() {
         <section id="services" className="section-block services-section" aria-labelledby="services-title">
           <div className="section-heading">
             <p className="eyebrow">Tjenester</p>
-            <h2 id="services-title">Når en prosess er tung nok, er den ofte klar for et verktøy.</h2>
+            <h2 id="services-title">Jeg bygger når standardverktøyene ikke passer arbeidsflyten.</h2>
             <p>
-              Korani Solutions tar oppdrag der teknologi skal gi konkret effekt: mindre manuelt arbeid,
-              bedre oversikt og raskere leveranse.
+              Noen oppgaver blir aldri gode av flere møter, flere Excel-ark eller enda et system som
+              nesten passer. Da trengs et verktøy som forstår prosessen, dataene og folkene som skal
+              bruke det.
             </p>
           </div>
 
@@ -219,8 +221,8 @@ function App() {
 
         <section className="focus-band" aria-labelledby="focus-title">
           <div>
-            <p className="eyebrow">Typiske oppdrag</p>
-            <h2 id="focus-title">Du trenger ikke vite løsningen først.</h2>
+            <p className="eyebrow">Hva du får</p>
+            <h2 id="focus-title">Fra rotete prosess til konkret leveranse.</h2>
           </div>
           <div className="use-case-list">
             {useCases.map((item) => (
@@ -232,7 +234,7 @@ function App() {
         <section id="process" className="section-block process-section" aria-labelledby="process-title">
           <div className="section-heading compact">
             <p className="eyebrow">Prosess</p>
-            <h2 id="process-title">Start lite. Test verdi. Bygg videre.</h2>
+            <h2 id="process-title">Rask avklaring, praktisk bygging og tydelig vei videre.</h2>
           </div>
 
           <div className="process-grid">
@@ -249,14 +251,15 @@ function App() {
         <section className="about-section" aria-labelledby="about-title">
           <div className="about-copy">
             <p className="eyebrow">Om Jonas</p>
-            <h2 id="about-title">Teknisk bakgrunn, produktmentalitet og lav terskel for å bygge.</h2>
+            <h2 id="about-title">Jeg liker problemer der kode må møte virkeligheten.</h2>
             <p>
-              Jeg kommer fra automasjon, kontrollsystemer og software. Det betyr at jeg liker problemer
-              der data, mennesker, dokumenter og systemer må spille sammen.
+              Bakgrunnen min er automasjon, kontrollsystemer, engineering-dokumentasjon og software.
+              Jeg har bygget verktøy for blant annet tekniske dokumenter, SCD/AML-analyse, filflyt,
+              PDF/Visio-lignende produksjon, interne arbeidsflater og egne produkter.
             </p>
             <p>
-              Korani Solutions AS er bygget for konsulentoppdrag, prototyper og praktiske leveranser for
-              bedrifter som vil få fart på en konkret arbeidsflyt.
+              Korani Solutions AS er laget for oppdrag der du trenger en teknisk person som kan forstå
+              problemet, bygge løsningen og få den tett nok på hverdagen til at den faktisk blir brukt.
             </p>
           </div>
 
@@ -264,8 +267,8 @@ function App() {
             <ShieldCheck size={30} aria-hidden="true" />
             <h3>Hva du får</h3>
             <p>
-              En teknisk sparringspartner som kan forstå problemet, bygge første versjon og gjøre veien
-              videre tydelig.
+              En praktisk bygger som kan gå fra uklar arbeidsflyt til fungerende verktøy, med nok
+              struktur til at løsningen kan driftes, forklares og videreutvikles.
             </p>
             <div>
               {backgroundSignals.map((signal) => (
@@ -278,10 +281,11 @@ function App() {
         <section id="contact" className="contact-section" aria-labelledby="contact-title">
           <div className="contact-copy">
             <p className="eyebrow">Kontakt</p>
-            <h2 id="contact-title">Send en kort forklaring på hva som tar tid.</h2>
+            <h2 id="contact-title">Har du en oppgave som spiser timer hver uke?</h2>
             <p>
-              En god første melding er enkel: hva dere gjør manuelt, hvilke filer eller systemer som er
-              involvert, og hva dere ønsker å slippe.
+              Send meg noen linjer om hvordan jobben gjøres i dag, hvilke filer eller systemer som er
+              involvert, og hva som ville vært verdifullt å slippe. Jeg svarer med en ærlig vurdering
+              av om det bør automatiseres, bygges eller løses enklere.
             </p>
             <div className="direct-contact">
               <a href={`mailto:${contactEmail}`}>
@@ -347,7 +351,7 @@ function App() {
                 rows={5}
                 value={form.message}
                 onChange={(event) => updateForm('message', event.target.value)}
-                placeholder="Hva tar tid, hva er vanskelig, og hva ville vært nyttig å få automatisert?"
+                placeholder="Hva tar tid, hva er vanskelig, hvilke filer/systemer er involvert, og hva ville vært en god leveranse?"
               />
             </label>
             <div className="form-actions">

@@ -51,7 +51,7 @@ const pages = [
         name: 'Korani Solutions AS',
         url: siteUrl,
       },
-      about: ['Search & Index', 'TrailReady', 'automation tools', 'AI workflows'],
+      about: ['Search & Index', 'TrailReady', 'teknisk automasjon', 'AI-arbeidsflyter'],
     },
   },
   {
